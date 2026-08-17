@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO Meta Tags -->
+  <title>Taoufik Hamza — Ingénieur Cybersécurité & Infrastructure | Portfolio</title>
+  <meta name="description" content="Portfolio officiel de Taoufik Hamza, Élève Ingénieur en Informatique et Réseaux (Option Cybersécurité, Infrastructures et Réseaux - 4ème année EMSI Casablanca). Projets SOC/SIEM, Blockchain Ethereum et 11 certifications vérifiées.">
+  <meta name="keywords" content="Taoufik Hamza, Cybersécurité, SOC, SIEM, Wazuh, EMSI, Ingénieur Réseaux, Blockchain, Solidity, Full Stack, Morocco, Casablanca">
+  <meta name="author" content="Taoufik Hamza">
+
+  <!-- OpenGraph Meta Tags for Social Sharing -->
+  <meta property="og:title" content="Taoufik Hamza — Portfolio Ingénieur Cybersécurité & Infrastructure">
+  <meta property="og:description" content="Spécialiste SOC/SIEM, Infrastructures Réseaux et Développement Web3. Imprimez mon CV et découvrez mes 11 certifications.">
+  <meta property="og:image" content="assets/images/banner.png">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts & Icon Libraries -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  
+  <!-- Style Sheets -->
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/components.css">
+  <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body>
+
+  <!-- ==========================================================================
+       1. NAVIGATION BAR
+       ========================================================================== -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#home" class="nav-logo">
+        <i class="fa-solid fa-shield-halved nav-logo-icon"></i>
+        <span>TAOUFIK<span class="accent"> HAMZA</span></span>
+      </a>
+
+      <ul class="nav-menu">
+        <li><a href="#home" class="nav-link active">Accueil</a></li>
+        <li><a href="#soc-dashboard" class="nav-link">Sécurité & Audits</a></li>
+        <li><a href="#profile" class="nav-link">Profil & Parcours</a></li>
+        <li><a href="#skills" class="nav-link">Compétences</a></li>
+        <li><a href="#projects" class="nav-link">Projets</a></li>
+        <li><a href="#certifications" class="nav-link">Certifications</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-cta">
+        <!-- Theme Toggle Switch (Dark / Light) -->
+        <button id="theme-toggle" class="theme-toggle-btn" title="Changer le Mode">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+
+        <button class="mobile-toggle" aria-label="Menu Mobile">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ==========================================================================
+       2. HERO SECTION
+       ========================================================================== -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
+      
+      <div class="hero-content">
+        <h1 class="hero-name">TAOUFIK HAMZA</h1>
+        
+        <div class="hero-title-tag">
+          <span id="typewriter-text"></span><span class="typewriter-cursor">|</span>
+        </div>
+
+        <p class="hero-bio">
+          Élève ingénieur en 4ᵉ année, spécialisé en <strong>Cybersécurité, Infrastructures et Réseaux</strong>. Fortement engagé dans la sécurité des systèmes d'information, la gestion optimale des réseaux et la conception d'architectures informatiques hautement résilientes.
+        </p>
+
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary">
+            <i class="fa-solid fa-paper-plane"></i> Me Contacter
+          </a>
+        </div>
+
+        <div class="social-links">
+          <a href="https://github.com/taoufikhamza" target="_blank" class="social-link" title="GitHub">
+            <i class="devicon-github-original"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/taoufikhamza/" target="_blank" class="social-link" title="LinkedIn">
+            <i class="devicon-linkedin-plain colored"></i>
+          </a>
+          <a href="mailto:hamza.taoufik.pro@gmail.com" class="social-link" title="Email">
+            <i class="fa-solid fa-envelope"></i>
+          </a>
+          <a href="tel:+212717071596" class="social-link" title="Téléphone">
+            <i class="fa-solid fa-phone"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Profile Card (Clickable Image for Zoom) -->
+      <div class="profile-card-wrapper">
+        <div class="profile-card">
+          <div id="profile-img-trigger" class="profile-image-container" title="Cliquer pour agrandir la photo">
+            <img src="assets/images/profile.png" alt="Taoufik Hamza - Photo de Profil" class="profile-img">
+            <div class="zoom-badge-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+          </div>
+          <h2 class="profile-card-title">Taoufik Hamza</h2>
+          <p class="profile-card-subtitle">Cybersécurité & Infrastructure</p>
+          
+          <div class="profile-details-list">
+            <div class="profile-detail-item">
+              <i class="fa-solid fa-university"></i>
+              <span>EMSI Casablanca — 4ᵉ Année</span>
+            </div>
+            <div class="profile-detail-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Oulad Abbou, Berrechid — Maroc</span>
+            </div>
+            <div class="profile-detail-item">
+              <i class="fa-solid fa-envelope"></i>
+              <span>hamza.taoufik.pro@gmail.com</span>
+            </div>
+            <div class="profile-detail-item">
+              <i class="fa-solid fa-phone"></i>
+              <span>+212 717071596</span>
+            </div>
+          </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3. EXPERTISE EN CYBERSÉCURITÉ (OFFENSIVE & DÉFENSIVE)
+       ========================================================================== -->
+  <section id="soc-dashboard" class="section" style="padding-top: 2rem; padding-bottom: 4rem;">
+    <div class="container">
+      <div class="section-header" style="margin-bottom: 2rem;">
+        <span class="section-tag"><i class="fa-solid fa-shield-halved"></i> Expertise en Cybersécurité</span>
+        <h2 class="section-title">Sécurité Offensive & Défensive</h2>
+        <p class="section-subtitle">Audits de vulnérabilités, tests d'intrusion (Pentesting), sécurisation des systèmes et réponse aux incidents.</p>
+      </div>
+
+      <div class="soc-dashboard-card reveal">
+        
+        <!-- Console Header Bar -->
+        <div class="soc-console-header">
+          <div class="soc-status-badge">
+            <span class="pulse-dot"></span> CYBERSECURITY ENGINE ONLINE — REAL-TIME PROTECTION
+          </div>
+          <div class="soc-header-tags">
+            <span class="soc-pill"><i class="fa-solid fa-user-ninja"></i> Pentesting & Audit</span>
+            <span class="soc-pill"><i class="fa-solid fa-shield-halved"></i> Sécurité Défensive</span>
+            <span class="soc-pill"><i class="fa-solid fa-user-shield"></i> Réponse aux Incidents</span>
+          </div>
+        </div>
+
+        <!-- 4 Live Cyber Metric Cards -->
+        <div class="soc-stats-grid">
+          <div class="soc-stat-item">
+            <div class="soc-stat-icon"><i class="fa-solid fa-user-ninja"></i></div>
+            <div class="soc-stat-info">
+              <div class="soc-stat-val">Pentesting & Audits</div>
+              <div class="soc-stat-lbl">Tests d'Intrusion & Vulnérabilités</div>
+            </div>
+          </div>
+
+          <div class="soc-stat-item">
+            <div class="soc-stat-icon"><i class="fa-solid fa-shield-halved"></i></div>
+            <div class="soc-stat-info">
+              <div class="soc-stat-val">Sécurité Défensive</div>
+              <div class="soc-stat-lbl">Hardening & Protection Réseau</div>
+            </div>
+          </div>
+
+          <div class="soc-stat-item">
+            <div class="soc-stat-icon"><i class="fa-solid fa-user-shield"></i></div>
+            <div class="soc-stat-info">
+              <div class="soc-stat-val">Réponse aux Incidents</div>
+              <div class="soc-stat-lbl">Investigation & Remédiation</div>
+            </div>
+          </div>
+
+          <div class="soc-stat-item">
+            <div class="soc-stat-icon"><i class="fa-solid fa-lock"></i></div>
+            <div class="soc-stat-info">
+              <div class="soc-stat-val">Sécurité Applicative</div>
+              <div class="soc-stat-lbl">Audit de Code & Cryptographie</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4 Cyber Defense Pillars with Badges -->
+        <div class="soc-features-grid">
+          
+          <div class="soc-feature-box">
+            <div class="soc-box-header">
+              <div class="soc-box-icon cyan"><i class="fa-solid fa-user-ninja"></i></div>
+              <h4 class="soc-feature-title">Sécurité Offensive & Pentesting</h4>
+            </div>
+            <p class="soc-box-desc">
+              Évaluation globale des systèmes d'information, identification proactive des vulnérabilités, simulation d'attaques complexes et réalisation de tests d'intrusion (Pentesting).
+            </p>
+            <div class="soc-badge-list">
+              <span class="tech-tag"><i class="fa-solid fa-bug"></i> Pentesting</span>
+              <span class="tech-tag"><i class="fa-solid fa-crosshairs"></i> Audit de Vulnérabilités</span>
+              <span class="tech-tag"><i class="fa-solid fa-user-secret"></i> Simulation d'Attaques</span>
+              <span class="tech-tag"><i class="fa-solid fa-shield-cat"></i> Red Teaming</span>
+            </div>
+          </div>
+
+          <div class="soc-feature-box">
+            <div class="soc-box-header">
+              <div class="soc-box-icon green"><i class="fa-solid fa-shield-halved"></i></div>
+              <h4 class="soc-feature-title">Sécurité Défensive & Architecture</h4>
+            </div>
+            <p class="soc-box-desc">
+              Conception et déploiement d'architectures réseau résilientes, règles de filtrage strictes, isolation des flux et durcissement (Hardening) des serveurs et infrastructures.
+            </p>
+            <div class="soc-badge-list">
+              <span class="tech-tag"><i class="fa-solid fa-fire-burner"></i> Hardening Système</span>
+              <span class="tech-tag"><i class="fa-solid fa-network-wired"></i> Protection Réseau</span>
+              <span class="tech-tag"><i class="fa-solid fa-diagram-project"></i> Isolation des Flux</span>
+              <span class="tech-tag"><i class="fa-solid fa-server"></i> Filtrage & Pare-Feu</span>
+            </div>
+          </div>
+
+          <div class="soc-feature-box">
+            <div class="soc-box-header">
+              <div class="soc-box-icon purple"><i class="fa-solid fa-user-shield"></i></div>
+              <h4 class="soc-feature-title">Analyse & Réponse aux Incidents</h4>
+            </div>
+            <p class="soc-box-desc">
+              Détection précoce d'anomalies, qualification des menaces, investigation technique approfondie et élaboration de plans de remédiation rapide pour limiter les risques.
+            </p>
+            <div class="soc-badge-list">
+              <span class="tech-tag"><i class="fa-solid fa-magnifying-glass"></i> Investigation Technique</span>
+              <span class="tech-tag"><i class="fa-solid fa-chart-line"></i> Analyse des Risques</span>
+              <span class="tech-tag"><i class="fa-solid fa-bolt"></i> Remédiation Rapide</span>
+              <span class="tech-tag"><i class="fa-solid fa-box-archive"></i> Gestion de Crise</span>
+            </div>
+          </div>
+
+          <div class="soc-feature-box">
+            <div class="soc-box-header">
+              <div class="soc-box-icon orange"><i class="fa-solid fa-lock"></i></div>
+              <h4 class="soc-feature-title">Sécurité Web & Applications</h4>
+            </div>
+            <p class="soc-box-desc">
+              Audit de code source, contrôle d'accès rigoureux, intégration de protocoles cryptographiques et sécurisation des applications web et décentralisées.
+            </p>
+            <div class="soc-badge-list">
+              <span class="tech-tag"><i class="fa-solid fa-code"></i> Audit de Code</span>
+              <span class="tech-tag"><i class="fa-solid fa-key"></i> Cryptographie</span>
+              <span class="tech-tag"><i class="devicon-python-plain colored"></i> Développement Sécurisé</span>
+              <span class="tech-tag"><i class="devicon-ethereum-plain colored"></i> Smart Contracts</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       4. PROFIL ACADÉMIQUE & EXPERIENCES
+       ========================================================================== -->
+  <section id="profile" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-user-graduate"></i> Parcours Professionnel</span>
+        <h2 class="section-title">Formation & Expériences</h2>
+        <p class="section-subtitle">Aperçu de mon cursus académique d'ingénieur et de mes réalisations en entreprise.</p>
+      </div>
+
+      <div class="timeline-grid">
+        <div>
+          <h3 class="timeline-column-title">
+            <i class="fa-solid fa-graduation-cap" style="color: var(--cyber-cyan);"></i> Formations & Diplômes
+          </h3>
+          <div id="education-timeline" class="timeline"></div>
+        </div>
+
+        <div>
+          <h3 class="timeline-column-title">
+            <i class="fa-solid fa-briefcase" style="color: var(--cyber-green);"></i> Expériences Professionnelles
+          </h3>
+          <div id="experience-timeline" class="timeline"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       5. COMPÉTENCES TECHNIQUES
+       ========================================================================== -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-microchip"></i> Expertise Technique</span>
+        <h2 class="section-title">Matrice des Compétences</h2>
+        <p class="section-subtitle">Technologies, frameworks, outils SOC/SIEM et langages maîtrisés.</p>
+      </div>
+
+      <div id="skills-container" class="skills-grid"></div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6. SHOWCASE DES PROJETS (13 PROJETS RÉELS GITHUB)
+       ========================================================================== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-diagram-project"></i> Portfolio Technique</span>
+        <h2 class="section-title">Mes Projets Réalisés</h2>
+        <p class="section-subtitle">Découvrez tous mes projets en Cybersécurité, Blockchain, Desktop & Développement Web.</p>
+      </div>
+
+      <div id="project-filters" class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">Projets</button>
+        <button class="filter-btn" data-filter="cyber">Cybersécurité & Audits</button>
+        <button class="filter-btn" data-filter="blockchain">Blockchain & Web3</button>
+        <button class="filter-btn" data-filter="desktop">Java & Desktop</button>
+        <button class="filter-btn" data-filter="web">Développement Web</button>
+      </div>
+
+      <div id="projects-container" class="projects-grid"></div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       7. CERTIFICATIONS VÉRIFIÉES (11 CERTIFICATIONS)
+       ========================================================================== -->
+  <section id="certifications" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-award"></i> Diplômes Homologués</span>
+        <h2 class="section-title">Mes 11 Certifications Vérifiées</h2>
+        <p class="section-subtitle">Certificats de compétences délivrés par Coursera, Google, EPFL, Meta et University of Michigan.</p>
+      </div>
+
+      <div id="cert-filters" class="filter-tabs">
+        <button class="filter-btn active" data-filter="all">Toutes les certifications</button>
+        <button class="filter-btn" data-filter="cyber">Cybersécurité</button>
+        <button class="filter-btn" data-filter="web">Web & React</button>
+        <button class="filter-btn" data-filter="dev">Langages (C++, Python, JS)</button>
+        <button class="filter-btn" data-filter="management">Gestion & Agile</button>
+      </div>
+
+      <div id="certs-container" class="certs-grid"></div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       8. CONTACT SECTION
+       ========================================================================== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag"><i class="fa-solid fa-headset"></i> Prenez Contact</span>
+        <h2 class="section-title">Me Contacter</h2>
+        <p class="section-subtitle">N'hésitez pas à me contacter pour toute opportunité professionnelle ou échange technique.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-card">
+          <h3 style="font-size: 1.35rem; margin-bottom: 1.5rem; color: var(--text-bright);">Coordonnées Directes</h3>
+          
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div class="contact-details">
+              <label>Email Professionnel</label>
+              <a href="mailto:hamza.taoufik.pro@gmail.com">hamza.taoufik.pro@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+            <div class="contact-details">
+              <label>Téléphone</label>
+              <a href="tel:+212717071596">+212 717071596</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="contact-details">
+              <label>Adresse / Région</label>
+              <p>Oulad Abbou, BERRECHID — Maroc</p>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon"><i class="devicon-linkedin-plain colored"></i></div>
+            <div class="contact-details">
+              <label>LinkedIn</label>
+              <a href="https://www.linkedin.com/in/taoufikhamza/" target="_blank">linkedin.com/in/taoufikhamza</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form (Sujet Field Removed) -->
+        <div class="contact-form-card">
+          <form id="contact-form">
+            <div class="form-group">
+              <label class="form-label" for="form-name">Nom complet</label>
+              <input type="text" id="form-name" class="form-input" placeholder="Ex: Youssef El Amrani" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="form-email">Adresse Email</label>
+              <input type="email" id="form-email" class="form-input" placeholder="Ex: youssef.elamrani@gmail.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="form-message">Message</label>
+              <textarea id="form-message" class="form-textarea" rows="5" placeholder="Votre message..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              <i class="fa-solid fa-paper-plane"></i> Envoyer le Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       9. FOOTER (EMSI REMOVED AT END)
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 <strong>TAOUFIK HAMZA</strong> — Élève Ingénieur en Informatique et Réseaux (Option Cybersécurité, Infrastructures et Réseaux).</p>
+      <p style="font-size: 0.8rem; margin-top: 0.5rem; color: var(--text-sub);">
+        Conçu avec HTML5, CSS3, JavaScript ES6+ & Devicon Icons.
+      </p>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       10. PROJECT DETAILS MODAL OVERLAY
+       ========================================================================== -->
+  <div id="project-modal" class="modal-overlay">
+    <div class="modal-container">
+      <button id="modal-close" class="modal-close" aria-label="Fermer">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      <div id="modal-body-content"></div>
+    </div>
+  </div>
+
+
+
+  <!-- ==========================================================================
+       12. PROFILE PHOTO LIGHTBOX ZOOM MODAL
+       ========================================================================== -->
+  <div id="profile-zoom-modal" class="modal-overlay">
+    <div class="modal-container" style="max-width: 520px; text-align: center; background: rgba(10, 15, 29, 0.95);">
+      <button id="profile-zoom-close" class="modal-close" aria-label="Fermer">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+      
+      <h3 style="font-size: 1.35rem; color: var(--text-bright); margin-bottom: 1rem;">Taoufik Hamza</h3>
+      
+      <img src="assets/images/profile.png" alt="Taoufik Hamza Portrait HD" style="width: 100%; max-height: 70vh; object-fit: contain; border-radius: var(--radius-md); border: 2px solid var(--cyber-cyan); box-shadow: 0 0 35px var(--cyber-cyan-glow);">
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/projectsData.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
